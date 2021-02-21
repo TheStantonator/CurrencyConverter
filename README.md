@@ -22,9 +22,9 @@ npm run lint
 
 ## More Information
 
-This is a project entirely around learning Vue from a React background. I'll summarise each file and explain my thinking for each one. I'll also not potential improvements for the future.
+This is a project entirely around learning Vue from a React background. I'll go through each area and explaind the components involved. I'll also note potential improvements for the future given more time and familiarity with Vue.
 
-
+### The Converter
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
