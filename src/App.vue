@@ -65,6 +65,7 @@ export default {
     max-width: 900px;
     margin: auto;
     padding: 1em;
+    overflow: hidden;
   }
 
   button {
