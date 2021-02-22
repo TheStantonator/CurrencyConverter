@@ -41,7 +41,9 @@ When the user enters a valid value and hits the button, one of two things can ha
 - A call to the API will be made using the from currency to get all of the conversion rates for this currency. These rates are them stored in an object to be used later
 - If the chosen "From" currency code matches the one from the previous conversion, no API call will be made and the rates will instead be retrieved from memory
 
-With the rates retrieved, the rate for the selected target will be used to multiply the enetered amount. This will then be presented as the result. The conversion is then added to local storage.
+With the rates retrieved, the rate for the selected target will be used to multiply the enetered amount. This will then be presented as the result. The conversion is then added to local storage. 
+
+Writing and reading from local storage is facilitated through use of the functions found in `/src/helpers/localstorage.js`, these take the objects and either stringify or convert them to JSON so they can be used in the javascript.
 
 ###### Select.vue
 This was my attempt at a reusable select component but I couldn't get the data binding with v-model to work. I've left it in as a proof of concept and left a commented out line at the top of Converter.vue
@@ -66,6 +68,9 @@ As well as this, the table could do with a few utility functions:
 - A "Delete All" option that will clear the state in the store and call `localstorage.clear()`
 - A reset sort button that will clear the searched column and reorder by the id
 - Pagination for when the history gets too large.
+
+## Final Thoughts
+Overall, I really liked Vue, it wasn't as similar to React as I first expected but was very easy to pick up based on prior experience. There are things mentioned that I needed more time to get to grips with such as maintaining state through custom components that unfortunately I didn't quite get my head around, but given more time I can't see this being an issue.
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
